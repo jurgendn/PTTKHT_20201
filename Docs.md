@@ -1,5 +1,59 @@
 # Docs
 
+## Cài đặt Django
+
+Docs này viết cho người dùng `Windows`
+
+### Cài Python
+
+[Links](https://www.python.org/downloads/windows/)
+
+### Virtual Environment
+
+Có thể cài trực tiếp lên thư mục gốc, tuy nhiên như thế thì dễ loạn
+
+Ông nào thích thì cũng chiều, có thể bỏ qua bước này
+
+#### Virtual Environment
+
+> Là môi trường ảo, độc lập với các môi trường ảo khác và môi trường gốc. Các packages, modules cài đặt trong virtual environment không ảnh hưởng đến các môi trường khác.
+
+`Command trong shell`
+
+```bash
+pip3 install virtualenv
+```
+
+Để tạo một venv mới, thực hiện câu lệnh sau tại thư mục mong muốn. Ví dụ project đặt ở `D:\\django_project\`, mở một shell trong thư mục trên và chạy câu lệnh sau:
+
+```powershell
+virtualenv `env_name`
+```
+
+'env_name' là tên cho environment, có thể đặt như nào cũng được, tùy vào mục đích. Trong bài này, giả sử đặt là `d_project`.
+
+Sau khi đã khởi tạo một venv, để sử dụng venv này thay cho env gốc, chạy câu lệnh sau:
+
+```shell
+\pathto\env\Scripts\activate
+```
+
+Ví dụ:
+
+```shell
+D:\\django_project\d_project\Scritps\activate
+```
+
+#### Django
+
+Django là gì thì trên web đã tả rõ.
+
+Cài Django trên venv sau khi đã activate venv như trên python gốc:
+
+```shell
+pip install django
+```
+
 ## Quy tắc viết code
 
 ### Code Layout
@@ -410,3 +464,8 @@ Ví dụ, với file `base.html` đã viết ở trên, khi muốn load page `re
 > Lưu ý là các hàm, các biến sử dụng ở trên được giả định là đã tồn tại trong chương trình.
 
 > Nói chung là đến đây thì biết đến thế, chứ tiếp theo làm như nào với đống static file thì tôi cũng chưa rõ lmao
+
+## Dùng Git
+
+Git là một phần mềm quản lí phiên bản (distributed version control system). 
+
