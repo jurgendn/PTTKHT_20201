@@ -1,0 +1,38 @@
+.treeview .rotate, .waves-effect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+.treeview .rotate, .treeview-animated .treeview-animated-list .treeview-animated-items .closed .fa-angle-right {
+  font-size: .8rem;
+  transition: all .1s linear;
+}
+
+.treeview.w-20 {
+  width: 20rem;
+}
+
+.treeview .rotate {
+  cursor: pointer;
+  user-select: none;
+  vertical-align: text-top;
+  margin-top: .2rem;
+}
+
+.treeview .nested {
+  display: none;
+}
+
+.treeview ul {
+  list-style-type: none;
+}
+
+.treeview .ic-w {
+  width: 1.3rem;
+}
+
