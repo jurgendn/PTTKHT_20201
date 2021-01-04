@@ -1,6 +1,60 @@
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block content %}
 
+<h3 class="text-dark mb-4">Quản lí môn học</h3>
+<div class="card shadow">
+  <div class="card-header py-3">
+    <p class="text-primary m-0 font-weight-bold">Danh sách các môn học</p>
+  </div>
+  <div class="card-body">
+    <div
+      class="table-responsive table mt-2"
+      id="dataTable"
+      role="grid"
+      aria-describedby="dataTable_info"
+    >
+      <table class="table my-0" id="dataTable">
+        <thead>
+          <tr>
+            <th>Tên môn</th>
+            <th>Số lượng bài đăng</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for subject in subjects %}
+          <tr>
+            <td><a href="subject_codes.html">{{subject.name}}</a></td>
+            <td>1.123</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td><strong>Position</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous"
+            ><span aria-hidden="true">«</span></a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next"
+            ><span aria-hidden="true">»</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
-{% block content %}
-<div id="post-content">Hi There</div>
 {% endblock %}
